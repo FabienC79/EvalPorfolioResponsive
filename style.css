@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f4f4f4;
+  color: black;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -15,27 +15,29 @@ header, section, footer {
 }
 
 header {
-  background-color: #fff;
-  border-bottom: 1px solid #3498db;
+  background-color: white;
+  border-bottom: 1px solid blue;
 }
 header h1 {
   margin: 0;
+  text-align: center;
 }
 header nav ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  justify-content: center;
 }
 header nav ul li {
   margin-right: 20px;
 }
 header nav ul li a {
   text-decoration: none;
-  color: #3498db;
+  color: blue;
 }
 header nav ul li a:hover {
-  color: #2ecc71;
+  color: green;
 }
 
 #about {
@@ -53,7 +55,7 @@ header nav ul li a:hover {
 
 #portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 20px;
 }
 #portfolio .project {
@@ -81,19 +83,19 @@ header nav ul li a:hover {
 }
 #contact form button {
   padding: 10px 20px;
-  background-color: #3498db;
+  background-color: blue;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 #contact form button:hover {
-  background-color: #2ecc71;
+  background-color: green;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: black;
+  color: white;
   text-align: center;
   padding: 10px;
 }
@@ -109,9 +111,33 @@ footer ul li {
   margin: 0 10px;
 }
 footer ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 footer ul li a:hover {
   text-decoration: underline;
 }
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: green;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0000cc;
+}
+
+#portfolio .project {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#portfolio .project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=style.css.map */
